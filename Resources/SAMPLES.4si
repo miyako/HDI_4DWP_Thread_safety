@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings-import-export all_records="true" char_display_format="decimal" format="4D" platform="automatic" table_no="8" table_name="SAMPLES">
+	<text_settings with_column_title="false"/>
+	<xml_settings export_xsl_mode="none"/>
+	<field field_no="1" kind="int32" table_no="8"/>
+	<field field_no="4" kind="int32" table_no="8"/>
+	<field field_no="3" kind="text" table_no="8"/>
+	<field field_no="2" kind="text" table_no="8"/>        </settings-import-export>

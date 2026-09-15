@@ -1,0 +1,471 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 720,
+	"height": 540,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 680,
+					"height": 500,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "TabControl",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"",
+						""
+					],
+					"action": "GotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 446,
+					"left": 300,
+					"width": 60,
+					"height": 60,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture1.png"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 446,
+					"left": 360,
+					"width": 60,
+					"height": 60,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture2.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 80,
+					"left": 60,
+					"width": 600,
+					"height": 420,
+					"dataSource": "Var1",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"recNotCompiled": {
+					"type": "rectangle",
+					"top": 330,
+					"left": 140,
+					"width": 450,
+					"height": 101,
+					"visibility": "hidden",
+					"stroke": "#FF6347",
+					"strokeWidth": 4,
+					"borderRadius": 5
+				},
+				"txtNotCompiled": {
+					"type": "text",
+					"top": 356,
+					"left": 140,
+					"width": 450,
+					"height": 58,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"text": "The database must run in compiled mode in order to use preemptive processes. "
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"top": 346,
+					"left": 299,
+					"width": 150,
+					"height": 20,
+					"text": "Create invoices",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 80,
+					"left": 60,
+					"width": 600,
+					"height": 240,
+					"dataSource": "Var2",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 226,
+					"left": 249,
+					"width": 250,
+					"height": 17,
+					"text": "Time for creating invoices (in seconds):"
+				},
+				"vMessageGui1": {
+					"type": "input",
+					"top": 268,
+					"left": 532,
+					"width": 166,
+					"height": 88,
+					"dataSource": "vMessageGuiPreemp",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 18,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"multiline": "yes",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Thermo": {
+					"type": "progress",
+					"top": 383,
+					"left": 253,
+					"width": 242,
+					"height": 36,
+					"visibility": "hidden",
+					"dataSource": "vTher",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 10,
+					"enterable": true,
+					"class": "default"
+				},
+				"rulerSeconds": {
+					"type": "ruler",
+					"top": 261,
+					"left": 240,
+					"width": 269,
+					"height": 36,
+					"dataSource": "vNumSec",
+					"continuousExecution": false,
+					"showGraduations": true,
+					"labelsPlacement": "right",
+					"min": 1,
+					"max": 8,
+					"graduationStep": 1,
+					"numberFormat": "### ##0",
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vMessageGui2": {
+					"type": "input",
+					"top": 268,
+					"left": 40,
+					"width": 166,
+					"height": 88,
+					"dataSource": "vMessageGuiCoop",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 18,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"multiline": "yes",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"recNotCompiled1": {
+					"type": "rectangle",
+					"top": 330,
+					"left": 140,
+					"width": 450,
+					"height": 101,
+					"visibility": "hidden",
+					"stroke": "#FF6347",
+					"strokeWidth": 4,
+					"borderRadius": 5
+				},
+				"txtNotCompiled1": {
+					"type": "text",
+					"top": 356,
+					"left": 140,
+					"width": 450,
+					"height": 58,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"text": "The database must run in compiled mode in order to use preemptive processes. "
+				},
+				"vMessageGui": {
+					"type": "input",
+					"top": 395,
+					"left": 40,
+					"width": 638,
+					"height": 22,
+					"dataSource": "vMessageGuiCompare",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 18,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"multiline": "yes",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"Button",
+				"rulerSeconds"
+			]
+		},
+		{
+			"objects": {
+				"WriteProArea": {
+					"type": "write",
+					"top": 50,
+					"left": 280,
+					"width": 400,
+					"height": 380,
+					"dataSource": "[INVOICES_CREATED:9]Doc:2",
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"zoom": 50,
+					"showSelection": true,
+					"showVerticalRuler": false,
+					"events": [
+						"onDataChange",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"CustomerName": {
+					"type": "input",
+					"top": 208,
+					"left": 40,
+					"width": 216,
+					"height": 17,
+					"dataSource": "[INVOICES_CREATED:9]CustomerName:3",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Creation": {
+					"type": "input",
+					"top": 258,
+					"left": 40,
+					"width": 216,
+					"height": 17,
+					"dataSource": "[INVOICES_CREATED:9]Creation:4",
+					"dataSourceTypeHint": "time",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 184,
+					"left": 40,
+					"width": 110,
+					"height": 17,
+					"textAlign": "left",
+					"text": "CustomerName: "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 233,
+					"left": 40,
+					"width": 110,
+					"height": 17,
+					"textAlign": "left",
+					"text": "Creation: "
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 121,
+					"left": 106,
+					"width": 30,
+					"height": 30,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK12"
+					},
+					"shortcutKey": "\u0000",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bPrevious.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 121,
+					"left": 161,
+					"width": 30,
+					"height": 30,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK12"
+					},
+					"shortcutKey": "\u0000",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bNext.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 84,
+					"left": 106,
+					"width": 85,
+					"height": 17,
+					"dataSource": "vRecNum",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"visible": false,
+				"selectable": false,
+				"objects": [
+					"recNotCompiled",
+					"txtNotCompiled",
+					"recNotCompiled1",
+					"txtNotCompiled1"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bPrevious",
+					"bNext"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"top": 17,
+					"left": 18,
+					"width": 168,
+					"height": 19,
+					"text": "Open...",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"WriteProArea": {
+					"type": "write",
+					"top": 56,
+					"left": 23,
+					"width": 774,
+					"height": 636,
+					"sizingY": "grow",
+					"dataSource": "WpAreaVisualizeDoc",
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"showSelection": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"events": [
+						"onDataChange",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,11 @@
+//%attributes = {}
+C_LONGINT:C283($n; $i)
+
+ALL RECORDS:C47([INVOICES_CREATED:9])
+
+$n:=Records in selection:C76([INVOICES_CREATED:9])
+
+For ($i; 1; $n)
+	GOTO SELECTED RECORD:C245([INVOICES_CREATED:9]; $i)
+	DELETE RECORD:C58([INVOICES_CREATED:9])
+End for 

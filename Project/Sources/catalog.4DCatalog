@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_4DWP_Thread_safety" uuid="09F2015D8341416283C3D02695C4DD1A" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="TEMPLATES" uuid="2761B42758AB456E96C4EE9A0A0AAF9F" id="1">
+		<field name="ID" uuid="DC22840921824FD8A28747DFD07B3403" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="WP" uuid="6EF291E057F44EE3B06DC182781AC802" type="21" never_null="true" id="2"/>
+		<field name="Name" uuid="CDF261ABFEB543D8A5521641F082A659" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="NbLines" uuid="5CCC60AAF6944F5AB31886F02D044846" type="4" never_null="true" id="4"/>
+		<field name="Language" uuid="9923BFA7404E434D94267193F9E72CDC" type="10" limiting_length="255" never_null="true" id="5"/>
+		<primary_key field_name="ID" field_uuid="DC22840921824FD8A28747DFD07B3403"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="CUSTOMER" uuid="806F41BF10AC4110B91A0AF41570E307" id="2">
+		<field name="ID" uuid="8E4D11C3B6914D93BAFC871B6CEA2EC0" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Lastname" uuid="480E654DF6A94966A4E86A9FE8C803D0" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Firstname" uuid="4332D766F7AA436591D86B7197F0384F" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Adress" uuid="00F7892D4A7A43CB86F70B16A478EB42" type="10" never_null="true" id="4"/>
+		<field name="ZipCode" uuid="6F3CF773BC18450AB858A2BF2EA71891" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="City" uuid="B271D83E8D2446248495683D4A564D67" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="Phone" uuid="A568E230017A4A2FBFE2ABD7AB1715AE" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="Email" uuid="81C423367D8348F39365504842D02EF3" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="CustomerNumber" uuid="02DA17A66D0C4E0A93D1C90951DA2B8E" type="10" autogenerate="true" store_as_UUID="true" never_null="true" id="9"/>
+		<primary_key field_name="ID" field_uuid="8E4D11C3B6914D93BAFC871B6CEA2EC0"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="INVOICE" uuid="4AC86BECE7A3418FA295AFF188ED5FE1" id="3">
+		<field name="ID" uuid="12CF9B1345F940FE8467C23836F1D6CF" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="InvoiceNumber" uuid="915D1F9E276F40F0AFD47E4A440DFC5A" type="10" autogenerate="true" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="InvoiceDate" uuid="FD2E909D74F54595A55A09818B9B13CF" type="8" never_null="true" id="3"/>
+		<field name="CustomerReference" uuid="B3347685D1A94032BB69C9CB7C6026A8" type="10" store_as_UUID="true" never_null="true" id="4"/>
+		<field name="OrderID" uuid="9E2227107F644EE4ACF0A42963CFE6C9" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="BarCode" uuid="90BBB25B129241A49E16732D7A102B1A" type="12" never_null="true" id="6"/>
+		<primary_key field_name="ID" field_uuid="12CF9B1345F940FE8467C23836F1D6CF"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="INVOICE_LINES" uuid="CB1FA08F0EBF463993AEA6A42B37F705" id="4">
+		<field name="ID" uuid="D70CDE12738B4D108C626A035FB54347" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="InvoiceReference" uuid="000EFC35DEE149928740A80AC66A3366" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="ArticleReference" uuid="313582AE7E6F4A5F88784FFB25542774" type="10" store_as_UUID="true" never_null="true" id="3"/>
+		<field name="Quantity" uuid="F54EB0F11B6447D3B8E32F05A3036DF2" type="6" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="D70CDE12738B4D108C626A035FB54347"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="ARTICLES" uuid="FB1D36911CB1410B8C89ACD311B00B76" id="5">
+		<field name="ID" uuid="34D9A101472C47F4A247833FF0D399AC" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="ArticleNumber" uuid="3A1C737833AE4ED380DA0FACB64ABFD4" type="10" autogenerate="true" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="Type" uuid="3682DABBF17741B8AB0B330DD3C64BF8" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Description" uuid="D1A1378E7347464DA33DA632FDE4AF26" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="Description2" uuid="A5B75C3A4A90418099633DFE87227DFD" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="Price" uuid="76C1E4A1C6AA49C39E2B2ABC8B3CD4BE" type="6" never_null="true" id="6"/>
+		<field name="VATrate" uuid="D4B115D106134FECAD92EBD8DBF48D37" type="6" never_null="true" id="7"/>
+		<field name="Icon" uuid="42407AB9E2B54B7F8BBDA9B21088BFEE" type="12" never_null="true" id="8"/>
+		<primary_key field_name="ID" field_uuid="34D9A101472C47F4A247833FF0D399AC"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="TUTORIAL" uuid="91EAB6B803844136A28F52D174133210" id="6">
+		<field name="ID" uuid="C31D34D19FE64D0291C3458EAED117CC" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Language" uuid="D362837EF67E451280CE6C3A901A61CF" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Tuto" uuid="E18592F129B64770AEFD2EE299F227D2" type="21" never_null="true" id="3"/>
+		<field name="Copy_of_ID" uuid="8A7E2248E4A04FD0914F240019CB82AC" type="4" unique="true" autosequence="true" not_null="true" id="4"/>
+		<field name="Title" uuid="54ED9E81A98549C79C8CFCC5A43A6583" type="10" never_null="true" id="5"/>
+		<field name="Text" uuid="120256668C684080A96E62C8E2F23B5D" type="10" never_null="true" id="6"/>
+		<field name="SampleSort" uuid="26CDE54AA5594B55BD84591014AB6562" type="4" never_null="true" id="7"/>
+		<primary_key field_name="ID" field_uuid="C31D34D19FE64D0291C3458EAED117CC"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="(SAMPLES)" uuid="4C2CD723E4FE4E009DAD5A882684A781" id="7" hide_in_REST="true">
+		<field name="ID" uuid="47EFAEEB7AB04BC4950A106F2D2AA3C2" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Title" uuid="E7003027D6E84CD7B1C6EA0C8A92DEC6" type="10" never_null="true" id="2"/>
+		<field name="Text" uuid="A04C3DF490E54C1A9FCE8CEE6DF68F96" type="10" never_null="true" id="3"/>
+		<field name="SampleSort" uuid="074497C8B3654072A2FCC057DE0DFE89" type="4" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="47EFAEEB7AB04BC4950A106F2D2AA3C2"/>
+		<table_extra trashed="true" input_form="(Form1)" output_form="(Output1)"/>
+	</table>
+	<table name="SAMPLES" uuid="427CC198F5DE4CCFA92527F25AC5068B" id="8">
+		<field name="ID" uuid="D53DD23C68D64F89B55F5A6C5BE0FF4E" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Title" uuid="052B5C58842B45B6B635720E61C801C1" type="10" never_null="true" id="2"/>
+		<field name="Text" uuid="ACF0A66FF70E423B8A314ECAD2722BA2" type="10" never_null="true" id="3"/>
+		<field name="SampleSort" uuid="554F17C0E3914B069ABBAC0C7FCB872E" type="4" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="D53DD23C68D64F89B55F5A6C5BE0FF4E"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="INVOICES_CREATED" uuid="F75F07DF0736403CAD92D27E233954F0" id="9">
+		<field name="ID" uuid="A5DF30A68637433AB214A5EC1BB8CC02" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Doc" uuid="2E015CE85AE74FBF9390AAC7B911B3B5" type="21" never_null="true" id="2"/>
+		<field name="CustomerName" uuid="B299C490D13F463AAE97190B06568B2F" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="Creation" uuid="3953901876FC4E318BC58204E3763790" type="9" never_null="true" id="4"/>
+		<field name="isPreemptif" uuid="0794ED1D9C3B424B9986FA260F44BEE2" type="4" never_null="true" id="5"/>
+		<primary_key field_name="ID" field_uuid="A5DF30A68637433AB214A5EC1BB8CC02"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="(INVOICES_CREATED_BY_COOP_W)" uuid="6BCA85B9F53C42BD867FA69C2D484B9D" id="10" hide_in_REST="true">
+		<field name="ID" uuid="9F0C7BFB84774CC8BF64290472479A90" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Doc" uuid="02C76AD714684CC6955B180EAB370B57" type="21" never_null="true" id="2"/>
+		<field name="CustomerName" uuid="206AEB50194646BD807FAA7046D4E611" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Creation" uuid="F38D96096CA044EBB9DAAA08F2C13934" type="9" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="9F0C7BFB84774CC8BF64290472479A90"/>
+		<table_extra trashed="true" input_form="(Input)" output_form="(Output)"/>
+	</table>
+	<relation uuid="3E1D02EBD7AE4D3A82ADCA09CBCF774B" name_Nto1="Link_4" name_1toN="Link_4_return" state="1">
+		<related_field kind="source">
+			<field_ref uuid="313582AE7E6F4A5F88784FFB25542774" name="ArticleReference">
+				<table_ref uuid="CB1FA08F0EBF463993AEA6A42B37F705" name="INVOICE_LINES"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="3A1C737833AE4ED380DA0FACB64ABFD4" name="ArticleNumber">
+				<table_ref uuid="FB1D36911CB1410B8C89ACD311B00B76" name="ARTICLES"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="false" smartlink="true"/>
+		</relation_extra>
+	</relation>
+	<relation uuid="EAE496E1E036430EB6D1DCBA2A603552" name_Nto1="Link_3" name_1toN="Link_3_return" state="1" integrity="delete">
+		<related_field kind="source">
+			<field_ref uuid="B3347685D1A94032BB69C9CB7C6026A8" name="CustomerReference">
+				<table_ref uuid="4AC86BECE7A3418FA295AFF188ED5FE1" name="INVOICE"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="02DA17A66D0C4E0A93D1C90951DA2B8E" name="CustomerNumber">
+				<table_ref uuid="806F41BF10AC4110B91A0AF41570E307" name="CUSTOMER"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true"/>
+		</relation_extra>
+	</relation>
+	<relation uuid="B359F01644A248CEB125EF498514012A" name_Nto1="Link_2" name_1toN="Link_2_return" state="1">
+		<related_field kind="source">
+			<field_ref uuid="000EFC35DEE149928740A80AC66A3366" name="InvoiceReference">
+				<table_ref uuid="CB1FA08F0EBF463993AEA6A42B37F705" name="INVOICE_LINES"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="915D1F9E276F40F0AFD47E4A440DFC5A" name="InvoiceNumber">
+				<table_ref uuid="4AC86BECE7A3418FA295AFF188ED5FE1" name="INVOICE"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true"/>
+		</relation_extra>
+	</relation>
+	<index kind="regular" uuid="0739A7A9148D4EFB9564F7E3371900A8" type="7">
+		<field_ref uuid="915D1F9E276F40F0AFD47E4A440DFC5A" name="InvoiceNumber">
+			<table_ref uuid="4AC86BECE7A3418FA295AFF188ED5FE1" name="INVOICE"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="3A0A6057CF89457296F2CC47544A7A27" type="7">
+		<field_ref uuid="C31D34D19FE64D0291C3458EAED117CC" name="ID">
+			<table_ref uuid="91EAB6B803844136A28F52D174133210" name="TUTORIAL"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="4115F1BC35D74B0AA65E2A527A9FB55C" type="7">
+		<field_ref uuid="3A1C737833AE4ED380DA0FACB64ABFD4" name="ArticleNumber">
+			<table_ref uuid="FB1D36911CB1410B8C89ACD311B00B76" name="ARTICLES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="4946B6E401164E8E8F4EDAB45F1CE3D7" type="7">
+		<field_ref uuid="DC22840921824FD8A28747DFD07B3403" name="ID">
+			<table_ref uuid="2761B42758AB456E96C4EE9A0A0AAF9F" name="TEMPLATES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="4A97EBF2E3AC4ECAA2CFDA054F1065AE" type="7">
+		<field_ref uuid="34D9A101472C47F4A247833FF0D399AC" name="ID">
+			<table_ref uuid="FB1D36911CB1410B8C89ACD311B00B76" name="ARTICLES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="5D680F972F964175A57718094530674B" type="7">
+		<field_ref uuid="02DA17A66D0C4E0A93D1C90951DA2B8E" name="CustomerNumber">
+			<table_ref uuid="806F41BF10AC4110B91A0AF41570E307" name="CUSTOMER"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="6DA3335BE70C4D88B6914EFFADE814D8" type="1">
+		<field_ref uuid="8A7E2248E4A04FD0914F240019CB82AC" name="Copy_of_ID">
+			<table_ref uuid="91EAB6B803844136A28F52D174133210" name="TUTORIAL"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="89EB4A85DB0E4FEBBD213FA32B3D8733" type="1">
+		<field_ref uuid="9F0C7BFB84774CC8BF64290472479A90" name="ID">
+			<table_ref uuid="6BCA85B9F53C42BD867FA69C2D484B9D" name="(INVOICES_CREATED_BY_COOP_W)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="8FE4F77D53CB4EB097A55817ED5575F9" type="7">
+		<field_ref uuid="8E4D11C3B6914D93BAFC871B6CEA2EC0" name="ID">
+			<table_ref uuid="806F41BF10AC4110B91A0AF41570E307" name="CUSTOMER"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="AAFB4B4854034A95B3B2763937D1F10E" type="7">
+		<field_ref uuid="D70CDE12738B4D108C626A035FB54347" name="ID">
+			<table_ref uuid="CB1FA08F0EBF463993AEA6A42B37F705" name="INVOICE_LINES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B9483D880CCA4E51B2E5FC258E731509" type="1">
+		<field_ref uuid="47EFAEEB7AB04BC4950A106F2D2AA3C2" name="ID">
+			<table_ref uuid="4C2CD723E4FE4E009DAD5A882684A781" name="(SAMPLES)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="EFF88D33C8294E9D9C7836F54C7E1374" type="7">
+		<field_ref uuid="12CF9B1345F940FE8467C23836F1D6CF" name="ID">
+			<table_ref uuid="4AC86BECE7A3418FA295AFF188ED5FE1" name="INVOICE"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F7CE880CA7764306AB2913D23DFCDA49" type="7">
+		<field_ref uuid="D53DD23C68D64F89B55F5A6C5BE0FF4E" name="ID">
+			<table_ref uuid="427CC198F5DE4CCFA92527F25AC5068B" name="SAMPLES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="FA65269E37B94D51BD3CA9C1F2F0B57F" type="7">
+		<field_ref uuid="A5DF30A68637433AB214A5EC1BB8CC02" name="ID">
+			<table_ref uuid="F75F07DF0736403CAD92D27E233954F0" name="INVOICES_CREATED"/>
+		</field_ref>
+	</index>
+	<base_extra package_name="HDI_4DWP_Thread_safety" structure_file_name="HDI_4DWP_Thread_safety" data_file_path=":HDI_4DWP_Thread_safety.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

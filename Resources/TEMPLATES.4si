@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings-import-export all_records="true" char_display_format="decimal" encoding="UTF-8" file_path="Macintosh HD:Users:miyako:Downloads:INVOICE_LINES.4ie" format="4D" platform="automatic" table_no="1" table_name="TEMPLATES">
+	<text_settings with_column_title="false"/>
+	<field field_no="1" kind="int32" table_no="1"/>
+	<field field_no="5" kind="alpha" table_no="1"/>
+	<field field_no="3" kind="alpha" table_no="1"/>
+	<field field_no="4" kind="int32" table_no="1"/>
+	<field field_no="2" kind="object" table_no="1"/>          </settings-import-export>

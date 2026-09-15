@@ -1,0 +1,47 @@
+{
+	"(Default Folder)": {
+		"groups": [
+			"(Default Forms)",
+			"(Default Project Methods)",
+			"(Default Tables)"
+		]
+	},
+	"(Default Forms)": {},
+	"(Default Project Methods)": {},
+	"(Default Tables)": {},
+	"Forms_Project": {},
+	"Forms_Tables": {
+		"forms": [
+			"[ARTICLES]Input",
+			"[ARTICLES]Output",
+			"[CUSTOMER]Input",
+			"[CUSTOMER]Output",
+			"[INVOICE_LINES]Input",
+			"[INVOICE_LINES]Output",
+			"[INVOICE]Input",
+			"[INVOICE]Output",
+			"[TEMPLATES]Input",
+			"[TEMPLATES]Output"
+		]
+	},
+	"Methods": {
+		"methods": [
+			"Compiler_Arrays",
+			"Compiler_Variables"
+		]
+	},
+	"Structure": {
+		"tables": [
+			"ARTICLES",
+			"CUSTOMER",
+			"INVOICE",
+			"INVOICE_LINES",
+			"TEMPLATES"
+		]
+	},
+	"trash": {
+		"groups": [
+			"(Default Folder)"
+		]
+	}
+}

@@ -1,0 +1,238 @@
+{
+	"tables": {
+		"(INVOICES_CREATED_BY_COOP_W)": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "526.125",
+				"top": "324.66015625",
+				"width": "306.171875",
+				"height": "149.57421875"
+			},
+			"displayable_fields_count": 5
+		},
+		"INVOICES_CREATED": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "195.04296875",
+				"top": "323.859375",
+				"width": "296.76953125",
+				"height": "248.5078125"
+			},
+			"displayable_fields_count": 9
+		},
+		"SAMPLES": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "7.828125",
+				"top": "224.3359375",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6
+		},
+		"(SAMPLES)": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "47.73046875",
+				"top": "240.04296875",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6
+		},
+		"TUTORIAL": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "1227.69140625",
+				"top": "24.14453125",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6
+		},
+		"ARTICLES": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "993.11328125",
+				"top": "21.01171875",
+				"width": "136",
+				"height": "209.33203125"
+			},
+			"displayable_fields_count": 8
+		},
+		"INVOICE_LINES": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "735.50390625",
+				"top": "0",
+				"width": "146",
+				"height": "125.33203125"
+			},
+			"displayable_fields_count": 4
+		},
+		"INVOICE": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "462.21875",
+				"top": "0",
+				"width": "159",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6,
+			"fields": {
+				"OrderID": {
+					"position": 3
+				},
+				"CustomerReference": {
+					"position": 5
+				},
+				"InvoiceDate": {
+					"position": 4
+				},
+				"InvoiceNumber": {
+					"position": 2
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		},
+		"CUSTOMER": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "252.7734375",
+				"top": "42.2890625",
+				"width": "153",
+				"height": "230.33203125"
+			},
+			"displayable_fields_count": 9,
+			"fields_ordering": 2,
+			"fields": {
+				"CustomerNumber": {
+					"position": 2
+				},
+				"Email": {
+					"position": 9
+				},
+				"Phone": {
+					"position": 8
+				},
+				"City": {
+					"position": 7
+				},
+				"ZipCode": {
+					"position": 6
+				},
+				"Adress": {
+					"position": 5
+				},
+				"Firstname": {
+					"position": 4
+				},
+				"Lastname": {
+					"position": 3
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		},
+		"TEMPLATES": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "13.14453125",
+				"top": "11.26171875",
+				"width": "103",
+				"height": "156.890625"
+			},
+			"displayable_fields_count": 5,
+			"fields": {
+				"Name": {
+					"position": 2
+				},
+				"WP": {
+					"position": 3
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		}
+	},
+	"relations": {
+		"B359F01644A248CEB125EF498514012A": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			}
+		},
+		"EAE496E1E036430EB6D1DCBA2A603552": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			}
+		},
+		"3E1D02EBD7AE4D3A82ADCA09CBCF774B": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			}
+		}
+	}
+}

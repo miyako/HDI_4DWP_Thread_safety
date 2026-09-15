@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings-import-export all_records="true" char_display_format="decimal" file_path="Macintosh HD:Users:miyako:Downloads:CUSTOMERS.4ie" format="4D" platform="automatic" table_no="2" table_name="CUSTOMER">
+	<text_settings with_column_title="false"/>
+	<field field_no="4" kind="text" table_no="2"/>
+	<field field_no="6" kind="alpha" table_no="2"/>
+	<field field_no="9" kind="alpha" table_no="2"/>
+	<field field_no="8" kind="alpha" table_no="2"/>
+	<field field_no="3" kind="alpha" table_no="2"/>
+	<field field_no="1" kind="int32" table_no="2"/>
+	<field field_no="2" kind="alpha" table_no="2"/>
+	<field field_no="7" kind="alpha" table_no="2"/>
+	<field field_no="5" kind="alpha" table_no="2"/>
+	<xml_settings export_xsl_mode="none"/>                  </settings-import-export>

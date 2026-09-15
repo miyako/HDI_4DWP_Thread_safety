@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings-import-export all_records="true" char_display_format="decimal" encoding="UTF-8" file_path="Macintosh HD:Users:miyako:Downloads:TEMPLATES.4ie" format="4D" platform="automatic" table_no="6" table_name="TUTORIAL">
+	<text_settings with_column_title="false"/>
+	<field field_no="1" kind="int32" table_no="6"/>
+	<field field_no="2" kind="alpha" table_no="6"/>
+	<field field_no="3" kind="object" table_no="6"/>      </settings-import-export>
