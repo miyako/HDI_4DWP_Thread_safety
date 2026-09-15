@@ -1,3 +1,4 @@
+//%attributes = {"invisible":true}
 OBJECT SET VISIBLE:C603(*; "vMessageGui@"; False:C215)
 vTher:=1
 OBJECT SET VISIBLE:C603(vTher; True:C214)

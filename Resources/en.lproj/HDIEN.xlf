@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Sources/Forms/HDI/form.4DForm" source-language="en" target-language="en">
+    <body>
+    <trans-unit id="BtnDemo" resname="BtnDemo">
+      <source>Demo</source>
+      <target>Demo</target>
+    </trans-unit>
+    <trans-unit id="HDI_TxtSorryDesignMode" resname="HDI_TxtSorryDesignMode">
+      <source>Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
+      <target>Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</target>
+    </trans-unit>
+    <trans-unit id="HDI_TxtInfo1" resname="HDI_TxtInfo1">
+      <source>How Do I...</source>
+      <target>How Do I...</target>
+    </trans-unit>
+    <trans-unit id="HDI_TxtInfo2" resname="HDI_TxtInfo2">
+      <source>… Improve my database scalability using 4D Write Pro commands?</source>
+      <target>… Improve my database scalability using 4D Write Pro commands?</target>
+    </trans-unit>
+    <trans-unit id="HDI_TxtSorryOldVersion" resname="HDI_TxtSorryOldVersion">
+      <source>Sorry, this “How do I” (HDI) example must be used witha newer version of 4D(v16 and above).</source>
+      <target>Sorry, this “How do I” (HDI) example must be used witha newer version of 4D(v16 and above).</target>
+    </trans-unit>
+    <trans-unit id="HDI_TxtVersion" resname="HDI_TxtVersion">
+      <source>4D v16 and above…</source>
+      <target>4D v16 and above…</target>
+    </trans-unit>
+    <trans-unit id="HDI_TxtNotPreemptive" resname="HDI_TxtNotPreemptive">
+      <source>Sorry, this “How do I” (HDI) example must be used with a4D 64 bit version.</source>
+      <target>Sorry, this “How do I” (HDI) example must be used with a4D 64 bit version.</target>
+    </trans-unit>
+    </body>
+  </file>
+</xliff>

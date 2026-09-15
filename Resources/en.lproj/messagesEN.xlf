@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Sources/Methods" source-language="en" target-language="en">
+    <body>
+    <trans-unit id="AlertDone" resname="AlertDone">
+      <source>done</source>
+      <target>done</target>
+    </trans-unit>
+    <trans-unit id="LogWorkerPreemptiveStart" resname="LogWorkerPreemptiveStart">
+      <source>worker preemptif methode Invoice debut</source>
+      <target>worker preemptif methode Invoice debut</target>
+    </trans-unit>
+    <trans-unit id="LogWorkerCooperativeStart" resname="LogWorkerCooperativeStart">
+      <source>worker cooperatif methode Invoice debut</source>
+      <target>worker cooperatif methode Invoice debut</target>
+    </trans-unit>
+    <trans-unit id="LogWorkerPreemptiveInvoice" resname="LogWorkerPreemptiveInvoice">
+      <source>worker preemptif methode Invoice</source>
+      <target>worker preemptif methode Invoice</target>
+    </trans-unit>
+    <trans-unit id="LogWorkerCooperativeInvoice" resname="LogWorkerCooperativeInvoice">
+      <source>worker cooperatif methode Invoice</source>
+      <target>worker cooperatif methode Invoice</target>
+    </trans-unit>
+    </body>
+  </file>
+</xliff>

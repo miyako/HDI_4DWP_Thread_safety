@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Sources/Forms/HDI2/form.4DForm" source-language="en" target-language="en">
+    <body>
+    <trans-unit id="HDI2_TxtNotCompiled" resname="HDI2_TxtNotCompiled">
+      <source>The database must run in compiled mode in order to use preemptive processes. </source>
+      <target>The database must run in compiled mode in order to use preemptive processes. </target>
+    </trans-unit>
+    <trans-unit id="HDI2_BtnCreateInvoices" resname="HDI2_BtnCreateInvoices">
+      <source>Create invoices</source>
+      <target>Create invoices</target>
+    </trans-unit>
+    <trans-unit id="HDI2_TxtTimeForCreatingInvoices" resname="HDI2_TxtTimeForCreatingInvoices">
+      <source>Time for creating invoices (in seconds):</source>
+      <target>Time for creating invoices (in seconds):</target>
+    </trans-unit>
+    <trans-unit id="HDI2_TxtCustomerName" resname="HDI2_TxtCustomerName">
+      <source>CustomerName: </source>
+      <target>CustomerName: </target>
+    </trans-unit>
+    <trans-unit id="HDI2_TxtCreation" resname="HDI2_TxtCreation">
+      <source>Creation: </source>
+      <target>Creation: </target>
+    </trans-unit>
+    </body>
+  </file>
+</xliff>

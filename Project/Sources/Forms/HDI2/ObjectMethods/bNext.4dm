@@ -1,4 +1,5 @@
-C_LONGINT:C283($vNumRecordsInSel; $vNumCurrentRecord)
+//%attributes = {"invisible":true}
+var $vNumRecordsInSel; $vNumCurrentRecord : Integer
 
 SAVE RECORD:C53([INVOICES_CREATED:9])
 NEXT RECORD:C51([INVOICES_CREATED:9])

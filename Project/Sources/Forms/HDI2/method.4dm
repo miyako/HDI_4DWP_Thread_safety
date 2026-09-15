@@ -1,4 +1,6 @@
-C_TEXT:C284($tutoPath)
+//%attributes = {"invisible":true}
+var $tutoPath : Text
+var $vNumRecordsInSel; $vNumCurrentRecord : Integer
 
 Case of 
 		
@@ -12,7 +14,6 @@ Case of
 		vTotalVAT:=0
 		vTotalTTC:=0
 		
-		C_TEXT:C284(vMessageGuiCompare; vMessageGuiCoop; vMessageGuiPreemp)
 		vMessageGuiCompare:=""
 		vMessageGuiCoop:=""
 		vMessageGuiPreemp:=""
@@ -39,7 +40,6 @@ Case of
 		$vNumRecordsInSel:=Records in selection:C76([INVOICES_CREATED:9])
 		
 		//message record number/record selected
-		C_LONGINT:C283($vNumRecordsInSel; $vNumCurrentRecord)
 		$vNumRecordsInSel:=Records in selection:C76([INVOICES_CREATED:9])
 		$vNumCurrentRecord:=Selected record number:C246([INVOICES_CREATED:9])
 		

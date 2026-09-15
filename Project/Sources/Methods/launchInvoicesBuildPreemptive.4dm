@@ -1,12 +1,6 @@
-//%attributes = {"preemptive":"capable"}
+//%attributes = {"invisible":true,"preemptive":"capable"}
 
-C_LONGINT:C283($1; $isPreemptif; $3; $nbOfCustomer; $4; $counterCustomer)
-C_TIME:C306($2; $timeToDie)
-
-$isPreemptif:=$1
-$timeToDie:=$2
-$nbOfCustomer:=$3
-$counterCustomer:=$4
+#DECLARE($isPreemptif : Integer; $timeToDie : Time; $counterCustomer : Integer; $nbOfCustomer : Integer)
 
 //create invoices for each customer with the following method
 For ($counterCustomer; 1; $nbOfCustomer)
