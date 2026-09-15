@@ -1,5 +1,5 @@
-//%attributes = {}
-C_LONGINT:C283($n; $i)
+//%attributes = {"invisible":true}
+var $n; $i : Integer
 
 ALL RECORDS:C47([INVOICES_CREATED:9])
 

@@ -1,36 +1,34 @@
 //%attributes = {"invisible":true}
-C_REAL:C285(Button)
-C_REAL:C285(Header1)
-C_TEXT:C284(vRecNum)
-C_LONGINT:C283(vShippingHT)
-C_LONGINT:C283(vShippingTTC)
-C_LONGINT:C283(vShippingVAT)
-C_LONGINT:C283(vTotal)
-C_LONGINT:C283(vTotalHT)
-C_LONGINT:C283(vTotalTTC)
-C_LONGINT:C283(vTotalVAT)
-C_LONGINT:C283(vVAT)
-C_OBJECT:C1216(WParea)
-C_OBJECT:C1216(WPbuild)
-C_OBJECT:C1216(WPfragment)
-C_TEXT:C284(wp_MemoName)
-C_TEXT:C284(wp_Name)
-C_REAL:C285(List Box)
-C_OBJECT:C1216(pictRange)
-C_PICTURE:C286(vIcon)
-C_BOOLEAN:C305(vPict)
-C_OBJECT:C1216(wpTutorial)
-C_REAL:C285(Demo)
-C_TEXT:C284(UpdateBookMark)
-C_TEXT:C284(Var1)
-C_TEXT:C284(Var2)
-C_TIME:C306(vNumSec)
-C_OBJECT:C1216(WpAreaVisualizeDoc)
-C_REAL:C285(vTher)
-C_TEXT:C284(vMessageGui)
-C_TIME:C306(launchPreemptive)
-C_TEXT:C284(vMessageGuiCoop)
-C_TEXT:C284(vMessageGuiPreemp)
-C_TEXT:C284(vMessageGuiCompare)
-C_LONGINT:C283(nbInvoicesCooperatif)
-C_LONGINT:C283(nbInvoicesPreemptif)
+var Button : Real
+var Header1 : Real
+var vRecNum : Text
+var vShippingHT : Integer
+var vShippingTTC : Integer
+var vShippingVAT : Integer
+var vTotal : Integer
+var vTotalHT : Integer
+var vTotalTTC : Integer
+var vTotalVAT : Integer
+var vVAT : Integer
+var WParea : Object
+var WPbuild : Object
+var WPfragment : Object
+var wp_MemoName : Text
+var wp_Name : Text
+var pictRange : Object
+var vIcon : Picture
+var vPict : Boolean
+var wpTutorial : Object
+var UpdateBookMark : Text
+var Var1 : Text
+var Var2 : Text
+var vNumSec : Time
+var WpAreaVisualizeDoc : Object
+var vTher : Real
+var vMessageGui : Text
+var launchPreemptive : Time
+var vMessageGuiCoop : Text
+var vMessageGuiPreemp : Text
+var vMessageGuiCompare : Text
+var nbInvoicesCooperatif : Integer
+var nbInvoicesPreemptif : Integer

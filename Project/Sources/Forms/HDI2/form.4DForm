@@ -89,7 +89,7 @@
 					"width": 450,
 					"height": 101,
 					"visibility": "hidden",
-					"stroke": "#FF6347",
+					"class": "hdi-warning-border",
 					"strokeWidth": 4,
 					"borderRadius": 5
 				},
@@ -100,12 +100,12 @@
 					"width": 450,
 					"height": 58,
 					"visibility": "hidden",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"textAlign": "center",
 					"fontFamily": "Lucida Grande",
 					"fontSize": 20,
 					"fontWeight": "bold",
-					"text": "The database must run in compiled mode in order to use preemptive processes. "
+					"text": ":xliff:HDI2_TxtNotCompiled"
 				}
 			}
 		},
@@ -116,8 +116,8 @@
 					"top": 346,
 					"left": 299,
 					"width": 150,
-					"height": 20,
-					"text": "Create invoices",
+					"text": ":xliff:HDI2_BtnCreateInvoices",
+					"class": "default",
 					"focusable": false,
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
@@ -149,7 +149,8 @@
 					"left": 249,
 					"width": 250,
 					"height": 17,
-					"text": "Time for creating invoices (in seconds):"
+					"stroke": "automatic",
+					"text": ":xliff:HDI2_TxtTimeForCreatingInvoices"
 				},
 				"vMessageGui1": {
 					"type": "input",
@@ -238,7 +239,7 @@
 					"width": 450,
 					"height": 101,
 					"visibility": "hidden",
-					"stroke": "#FF6347",
+					"class": "hdi-warning-border",
 					"strokeWidth": 4,
 					"borderRadius": 5
 				},
@@ -249,12 +250,12 @@
 					"width": 450,
 					"height": 58,
 					"visibility": "hidden",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"textAlign": "center",
 					"fontFamily": "Lucida Grande",
 					"fontSize": 20,
 					"fontWeight": "bold",
-					"text": "The database must run in compiled mode in order to use preemptive processes. "
+					"text": ":xliff:HDI2_TxtNotCompiled"
 				},
 				"vMessageGui": {
 					"type": "input",
@@ -316,7 +317,7 @@
 					"height": 17,
 					"dataSource": "[INVOICES_CREATED:9]CustomerName:3",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -342,7 +343,7 @@
 					"dataSource": "[INVOICES_CREATED:9]Creation:4",
 					"dataSourceTypeHint": "time",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -366,7 +367,8 @@
 					"width": 110,
 					"height": 17,
 					"textAlign": "left",
-					"text": "CustomerName: "
+					"stroke": "automatic",
+					"text": ":xliff:HDI2_TxtCustomerName"
 				},
 				"Text12": {
 					"type": "text",
@@ -375,7 +377,8 @@
 					"width": 110,
 					"height": 17,
 					"textAlign": "left",
-					"text": "Creation: "
+					"stroke": "automatic",
+					"text": ":xliff:HDI2_TxtCreation"
 				},
 				"bPrevious": {
 					"type": "pictureButton",

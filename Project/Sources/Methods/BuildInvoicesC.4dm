@@ -1,22 +1,17 @@
 //%attributes = {"invisible":true,"preemptive":"incapable"}
-C_LONGINT:C283($i; $j; $n; $p; $1; $2; $nCustomer; $nTemplate; $3; $isPreemptif)
-C_LONGINT:C283($nbInvoices; $nbLines)
-C_TIME:C306($timeToDie; $4)
-C_OBJECT:C1216($range; $buildRange; $empty; $RangeDoc; $invoiceLineDoc; $totalDoc; $bottomDoc)
+#DECLARE($nCustomer : Integer; $nTemplate : Integer; $isPreemptif : Integer; $timeToDie : Time)
 
-$nCustomer:=$1
-$nTemplate:=$2
-$isPreemptif:=$3
-$timeToDie:=$4
+var $i; $j; $n; $p; $nbInvoices; $nbLines : Integer
+var $range; $buildRange; $empty; $RangeDoc; $invoiceLineDoc; $totalDoc; $bottomDoc : Object
 
 vTotalHT:=0
 vTotalVAT:=0
 vTotalTTC:=0
 
 If ($isPreemptif=1)
-	LOG EVENT:C667(Into 4D debug message:K38:5; "worker preemptif methode Invoice debut")
+	LOG EVENT:C667(Into 4D debug message:K38:5; Localized string("LogWorkerPreemptiveStart"))
 Else 
-	LOG EVENT:C667(Into 4D debug message:K38:5; "worker cooperatif methode Invoice debut")
+	LOG EVENT:C667(Into 4D debug message:K38:5; Localized string("LogWorkerCooperativeStart"))
 End if 
 
 
@@ -181,10 +176,10 @@ Else
 End if 
 
 If ($isPreemptif=1)
-	LOG EVENT:C667(Into 4D debug message:K38:5; "worker preemptif methode Invoice")
+	LOG EVENT:C667(Into 4D debug message:K38:5; Localized string("LogWorkerPreemptiveInvoice"))
 Else 
 	
-	LOG EVENT:C667(Into 4D debug message:K38:5; "worker cooperatif methode Invoice")
+	LOG EVENT:C667(Into 4D debug message:K38:5; Localized string("LogWorkerCooperativeInvoice"))
 End if 
 
 

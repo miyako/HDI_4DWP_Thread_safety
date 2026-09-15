@@ -29,11 +29,11 @@
 					"width": 320,
 					"height": 77,
 					"visibility": "hidden",
-					"stroke": "#FF4D00",
+					"class": "hdi-warning-text",
 					"textAlign": "left",
 					"fontFamily": "Lucida Grande",
 					"fontSize": 13,
-					"text": "Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality."
+					"text": ":xliff:HDI_TxtSorryDesignMode"
 				},
 				"TxtInfo1": {
 					"type": "text",
@@ -43,7 +43,8 @@
 					"height": 15,
 					"class": "HDI",
 					"fontWeight": "bold",
-					"text": "How Do I..."
+					"stroke": "automatic",
+					"text": ":xliff:HDI_TxtInfo1"
 				},
 				"TxtInfo2": {
 					"type": "text",
@@ -53,7 +54,8 @@
 					"height": 91,
 					"class": "HDI",
 					"fontWeight": "bold",
-					"text": "… Improve my database scalability using 4D Write Pro commands?"
+					"stroke": "automatic",
+					"text": ":xliff:HDI_TxtInfo2"
 				},
 				"TxtSorry2": {
 					"type": "text",
@@ -64,7 +66,8 @@
 					"visibility": "hidden",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "Sorry, this “How do I” (HDI) \rexample must be used with\ra newer version of 4D\r(v16 and above)."
+					"stroke": "automatic",
+					"text": ":xliff:HDI_TxtSorryOldVersion"
 				},
 				"Picture3": {
 					"type": "picture",
@@ -83,20 +86,21 @@
 					"height": 16,
 					"fontFamily": "Lucida Grande",
 					"fontSize": 12,
-					"text": "4D v16 and above…"
+					"stroke": "automatic",
+					"text": ":xliff:HDI_TxtVersion"
 				},
 				"BtnDemo": {
 					"type": "button",
 					"top": 280,
 					"left": 250,
 					"width": 90,
-					"height": 20,
 					"dataSource": "Demo",
 					"action": "accept",
-					"text": "Demo",
-					"class": "default1",
+					"text": ":xliff:BtnDemo",
+					"class": "default1 default",
 					"focusable": false,
 					"defaultButton": true,
+					"method": "ObjectMethods/BtnDemo.4dm",
 					"events": [
 						"onClick"
 					]
@@ -110,7 +114,8 @@
 					"visibility": "hidden",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "Sorry, this “How do I” (HDI) \rexample must be used with a\r4D 64 bit version."
+					"stroke": "automatic",
+					"text": ":xliff:HDI_TxtNotPreemptive"
 				}
 			}
 		}

@@ -1,5 +1,8 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 // load descriptions
+
+var $platform : Integer
+var $dataClass; $path; $project : Text
 
 //check if the database run in compiled mode
 If (Is compiled mode:C492=True:C214)
@@ -28,11 +31,9 @@ SELECTION TO ARRAY:C260([SAMPLES:8]Title:2; TabControl)
 SELECTION TO ARRAY:C260([SAMPLES:8]Text:3; TextTabControl)
 UNLOAD RECORD:C212([SAMPLES:8])
 
-TabControl:=0
 Var1:=TextTabControl{1}
 Var2:=TextTabControl{2}
 
-C_LONGINT:C283($platform)
 _O_PLATFORM PROPERTIES:C365($platform)
 
 If ($platform=Windows:K25:3)

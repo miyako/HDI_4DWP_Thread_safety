@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true}
+//%attributes = {}
 //C_TEXT($companyName)
 //FakeData_ArraysInit ("en")
 

@@ -1,0 +1,26 @@
+/* Cross-platform dark mode support.
+   Plain black/white text and background colours are set directly on form
+   objects using the "automatic" / "automaticAlternate" values (see the
+   form.4DForm files) rather than through this stylesheet. This file only
+   carries rules for semantically-branded colours that must still shift
+   between light and dark mode without losing their meaning. */
+
+@media (prefers-color-scheme: light) {
+	.hdi-warning-text {
+		stroke: #FF4D00;
+	}
+
+	.hdi-warning-border {
+		stroke: #FF6347;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.hdi-warning-text {
+		stroke: #FF8A50;
+	}
+
+	.hdi-warning-border {
+		stroke: #CC4A33;
+	}
+}

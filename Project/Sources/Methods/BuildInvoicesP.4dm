@@ -1,13 +1,8 @@
 //%attributes = {"invisible":true,"preemptive":"capable"}
-C_LONGINT:C283($i; $j; $n; $p; $1; $2; $nCustomer; $nTemplate; $3; $isPreemptif)
-C_LONGINT:C283($nbInvoices; $nbLines)
-C_TIME:C306($timeToDie; $4)
-C_OBJECT:C1216($range; $buildRange; $empty; $RangeDoc; $invoiceLineDoc; $totalDoc; $bottomDoc)
+#DECLARE($nCustomer : Integer; $nTemplate : Integer; $isPreemptif : Integer; $timeToDie : Time)
 
-$nCustomer:=$1
-$nTemplate:=$2
-$isPreemptif:=$3
-$timeToDie:=$4
+var $i; $j; $n; $p; $nbInvoices; $nbLines : Integer
+var $range; $buildRange; $empty; $RangeDoc; $invoiceLineDoc; $totalDoc; $bottomDoc : Object
 
 vTotalHT:=0
 vTotalVAT:=0

@@ -1,6 +1,6 @@
-//%attributes = {"invisible":true}
-C_LONGINT:C283($nbArticles; $nbCustomers; $nbInvoices; $nbLines)
-C_LONGINT:C283($i; $j; $k)
+//%attributes = {}
+var $nbArticles; $nbCustomers; $nbInvoices; $nbLines : Integer
+var $i; $j; $k : Integer
 
 ALL RECORDS:C47([ARTICLES:5])
 $nbArticles:=Records in selection:C76([ARTICLES:5])
@@ -36,8 +36,4 @@ For ($i; 1; $nbCustomers)
 	End for 
 End for 
 
-ALERT:C41("done")
-
-
-
-
+ALERT:C41(Localized string("AlertDone"))
